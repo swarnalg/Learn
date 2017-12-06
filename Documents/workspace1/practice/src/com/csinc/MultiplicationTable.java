@@ -1,5 +1,7 @@
 package com.csinc;
 
+import java.util.Scanner;
+
 /**
  * Created by Bakam on 12/1/17.
  * /* Multiplication table
@@ -17,6 +19,8 @@ public class MultiplicationTable {
                 System.out.print(i * j + " ");
             }
             System.out.println();
+
+            Scanner sc = new Scanner(System.in);
 
         }
 

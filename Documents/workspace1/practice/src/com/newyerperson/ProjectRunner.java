@@ -6,14 +6,16 @@ package com.newyerperson;
 public class ProjectRunner {
     public static void main(String args[])
     {
-        NewYearPerson nyp = new NewYearPerson();
-        SantaClass sc =new SantaClass();
-        FatherFrost ff = new FatherFrost();
-        nyp.getBeard();
-        nyp.getHeadGear();
-        nyp.getTransportation();
-        nyp.move();
-        nyp.sing();
+        NewYearPerson newyearperson= new NewYearPerson();
+        SantaClass santaclass =new SantaClass();
+        FatherFrost fatherfrost = new FatherFrost();
+        newyearperson.getBeard();
+        newyearperson.getHeadGear();
+        newyearperson.getTransportation();
+        newyearperson.move();
+        newyearperson.sing();
+        santaclass.fly();
+        fatherfrost.drive();
         
     }
 }

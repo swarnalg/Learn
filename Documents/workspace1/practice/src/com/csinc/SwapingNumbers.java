@@ -1,3 +1,4 @@
+
 package com.csinc;
 
 /**
@@ -22,5 +23,6 @@ public class SwapingNumbers {
 
 
     }
+
 
 }

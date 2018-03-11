@@ -8,7 +8,6 @@ public class SwapNumbers {
     {
         int a=10;
         int b=20;
-        int c;
         System.out.println("value a:"+a);
         System.out.println("value b:"+b);
         a=a+b;

@@ -19,6 +19,19 @@ public class MultiplicationTable {
                 System.out.print(i * j + " ");
             }
             System.out.println();
+            /*  int i = 1;
+         int j = 1;
+    while(i<=10)
+    {
+        while(j<=10)
+        {
+            System.out.print(i*j+" ");
+            j++;
+        }
+       i++;
+        System.out.println();
+        j=1;
+    } */
 
             Scanner sc = new Scanner(System.in);
 

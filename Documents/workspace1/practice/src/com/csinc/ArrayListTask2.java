@@ -8,7 +8,7 @@ import java.util.ArrayList;
 4. Display to the screen contents of the list. Each value should be on a new line. Use a loop.
 5. Display to the screen its size. (After deleting one entry, the indexes of other entries change.
 For instance, if we delete first element, the second becomes the first one).*/
-public class arrayListTask2 {
+public class ArrayListTask2 {
 
     public static
     void main(String[] args) {

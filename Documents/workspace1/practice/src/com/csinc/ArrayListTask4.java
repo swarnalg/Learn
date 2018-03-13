@@ -14,7 +14,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 
 public class ArrayListTask4 {
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
 
         Reader r = new InputStreamReader(System.in);
@@ -23,17 +23,21 @@ public class ArrayListTask4 {
         ArrayList<String> al = new ArrayList<String>();
         for (int i = 0; i < 5; i++)
         {
-            String s = br.readLine();
-            al.add(0,s);
+            try {
+                String s = br.readLine();
+                al.add(0,s);
+            }
+            catch (IOException ioe)
+            {
+                System.out.println("caught IOE");
+            }
 
         }
-        System.out.println("IOE handled:"+ al);
-        //Display array data to screen
-        for (int j = 4; j >= 0; j--)
+        /* Display array data to screen */
+        for (int i = 0; i < al.size(); i++)
         {
-            System.out.println("ArrayList>>" +al.get(j));
+            System.out.println(al.get(i));
         }
-
     }
 }
 

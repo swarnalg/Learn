@@ -16,8 +16,8 @@ public class ArrayListTask1 {
         list.add("ccc");
         list.add("ddd");
         list.add("eee");
-       // int x = list.size();
-       // System.out.println(x);
+        int x = list.size();
+        System.out.println(x);
         for (int i=0;i<list.size();i++) {
             System.out.println("ArrayList : " + list.get(i));
         }

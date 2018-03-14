@@ -1,10 +1,8 @@
 package com.csinc;
 
-/*
-Task 4. Add 5 strings to the beginning of the list
-1. Create a list of strings.
-2. Read from the keyboard 5 strings. Add these strings to the beginning of the list, not to the end.
-3. Display to the screen contents of the list. Each value should be on a new line. Use a loop.
+/* 5 words in reverse order
+   Read from the keyboard 5 words.
+   Add them into a string list and display them to the screen in reverse order.
 */
 
 import java.io.BufferedReader;
@@ -13,10 +11,9 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 
-public class ArrayListTask4 {
-    public static void main(String[] args)
+public class WordsinReverseOrder {
+    public static void main(String args)
     {
-
         Reader r = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(r);
         //Read Strings from keyboard
@@ -36,8 +33,9 @@ public class ArrayListTask4 {
         /* Display array data to screen */
         for (int i = 0; i < al.size(); i++)
         {
-            System.out.println(al.get(i));
+            int j = al.size() - i - 1;
+            System.out.println(al.get(j));
+
         }
     }
 }
-

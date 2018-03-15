@@ -25,6 +25,7 @@ public class ArrayListTask5
         {
             String s = reader.readLine();
             list.add(s);
+
         }
 
 

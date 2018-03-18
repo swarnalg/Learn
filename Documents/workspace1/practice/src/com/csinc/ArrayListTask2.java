@@ -21,11 +21,12 @@ public class ArrayListTask2
         al.remove(0);
         al.remove(1);
         al.remove(2);
-        int x = al.size();
-        for (int i = 0; i < x; i++)
+       // int x = al.size();
+        for (int i = 0; i < al.size(); i++)
         {
             System.out.println(al.get(i));
         }
-        System.out.println(x);
+        System.out.println(al.size());
     }
+
 }

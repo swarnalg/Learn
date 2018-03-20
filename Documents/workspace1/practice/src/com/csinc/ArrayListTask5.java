@@ -9,26 +9,27 @@ Task 5. Delete the last string and add it to the beginning of the list
 */
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 
-public class ArrayListTask5
-{
-    public static void main(String[] args) throws Exception
-    {
-        Reader r = new InputStreamReader(System.in);
-        BufferedReader reader = new BufferedReader(r);
+public class ArrayListTask5 {
+    public static void main(String[] args) throws Exception {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<String>();
-        for (int i = 0; i < 5; i++)
+        for(int i = 0; i < 5; i++)
         {
-            String s = reader.readLine();
-            list.add(s);
-
+            String s = r.readLine(); list.add(s);
+        }
+        for(int i = 0; i < 13; i++) {
+            String last = list.get(list.size() - 1);
+            list.remove(list.size() - 1);
+            list.add(0, last);
         }
 
-
+        for (int j = 0; j < list.size(); j++) {
+            System.out.println(list.get(j));
+        }
 
     }
 

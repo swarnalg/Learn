@@ -28,7 +28,6 @@ public class SetTask1 {
             for (String text : set )
             {
                 System.out.println(text);
-
             }
         }
     }
